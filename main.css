@@ -1,0 +1,50 @@
+.header{
+    height: 150px;
+    width: 100%;
+    background-image: url("bilder/Namnlöst-1.png");
+ 
+}
+
+.content{
+    height: 400px;
+    width: 100%;
+    background-color: darkgreen;
+}
+
+.footer{
+    height: 100px;
+    width: 100%;
+    background-color: gray;
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+    "item1" "item1" "item1"
+    "item2" "item2" "item2"
+    "item3" "item3" "item3"
+    
+
+}
+
+.item1{
+    background-color: blue;
+}
+
+.item2{
+    background-color: blueviolet;
+}
+
+.item3{
+    background-color: aqua;
+}
+  
+
+
+
+
+
+
+
+
+
+2d6906 
