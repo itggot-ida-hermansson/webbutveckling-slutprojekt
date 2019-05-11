@@ -5,6 +5,7 @@
  
 }
 
+
 .content2{
     height: 400px;
     width: 100%;
@@ -18,6 +19,13 @@
     'Menyitem1' 'Menyitem2' 'Menyitem3' 
     'Menyitem4' 'Menyitem5' 'Menyitem6' 
     'Menyitem7' 'Menyitem8' 'Menyitem9' 
+
+}
+
+.Meny {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 90px;  
 
 }
 
@@ -37,6 +45,65 @@
     background-image: url("bilder/Meny4.png")
 }
 
+.Menyitem5{
+    background-image: url("bilder/Meny5.png")
+}
+
+.Menyitem6{
+    background-image: url("bilder/Meny6.png")
+}
+
+.Menyitem7{
+    background-image: url("bilder/Meny7.png")
+}
+
+.Menyitem8{
+    background-image: url("bilder/Meny8.png")
+}
+
+.Menyitem9{
+    background-image: url("bilder/Meny9.png")
+}
+
+.content3{
+    height: 400px;
+    width: 100%;
+    background-color: darkgreen;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+    'OmMatenitem1' 'OmMatenitem1'
+    'OmMatenitem2' 'OmMatenitem2'
+}
+
+
+
+.OmMatenitem{
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 300px;  
+    
+}
+
+.Bakgrund2 {
+    background-image: url("bilder/OmMaten2.jpg");
+    
+    
+}
+
+.Bakgrund1{
+    background-image: url("bilder/OmMaten1.jpg");
+}
+
+
 .content{
     height: 400px;
     width: 100%;
@@ -44,25 +111,38 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 100%;
-    grid-column-gap: 25px;
-    grid-row-gap: 25px;
     grid-template-areas: 
     'griditem1' 'griditem1'
     'griditem2' 'griditem2'
 
 }
 
-.griditem1{
-    background-image: url("bilder/RedigeradHAmburgare-1.png");
+.griditem{
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-left: 25px;
+    margin-bottom: 25px;
     text-align: center;
-    
-    
-    
+    color: white;
+    font-size: 25px;
+    font-style: oblique;
+    vertical-align: middle;
+    line-height: 300px; 
+    -webkit-transition: 2s;
+    transition: 2s; 
 }
 
-.griditem2 {
+.griditem:hover {
+    width: 300px;
+  }
+
+
+.OmOssBakgrund1{
+    background-image: url("bilder/RedigeradHAmburgare-1.png");
+
+}
+.OmOssBakgrund2{
     background-image: url("bilder/hamburgare.png");
-    text-align: center;
 
 }
 
@@ -81,6 +161,17 @@
 
 .footerItem{
     text-align: center;
+    vertical-align: middle;
+    line-height: 45px;  
+}
+
+@media screen and (max-width: 425px){
+
+.header{
+    background-color: springgreen;
+    height: 75px;
+    width: 100%;
+}
 }
 
 .dropbtn {
@@ -120,12 +211,3 @@
 
 
 .show {display:block;} 
-
-
-
-
-
-
-
-
-
