@@ -1,4 +1,5 @@
-
+2019-05-12
+Jag har fixat så att menyn fungerar. När sidan visas på laptop visas en stor klassisk meny medans när den visas på mobil visas en hamburgemeny istället. Jag har även lagt in alla mina skisser eftersom jag hade glömt det och fixat några andra små detaljer. Sidan blev inte exakt som jag tänkt men det får duga. 
 2019-05-11
 Jag har försökt optimera min kod så mycket som möjligt genom att undvika dubliserad css styling genom att använda samma css klass på så många ställen som möjligt. Jag har även tagit bort onödiga bilder som inte används längre och försökt att inte använda större bilder än vad som behövs. Har även försökt snygga till sidan genom att lägga till mer styling ( vet dock inte om de blev särskilt snyggt ). 
 Jag har lagt till en dropdown meny men har inte riktigt kommit på hur jag vill att den ska se ut eller göra. Jag har problem med min heaader som inte riktigt är i heöt rätt storlek. Därför ska jag försöka göra om min header i bättre storlek. 
