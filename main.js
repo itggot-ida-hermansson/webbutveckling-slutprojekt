@@ -1,3 +1,4 @@
+// dropdownmeny
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
   }
@@ -13,4 +14,17 @@ function myFunction() {
         }
       }
     }
-  }
+}
+
+// gör så popup fönstret visas
+function visaHelText(text) {
+  var popUpDiv = document.getElementById("popupWindow");
+  popUpDiv.style.display = "block";
+  var popUpBodyText = document.getElementById("popupBodyText");
+  popUpBodyText.innerHTML="<p>" + text + "</p>";
+}
+// Gör så popup fönstret stängs
+function closePopUp() {
+  var popUpDiv = document.getElementById("popupWindow");
+  popUpDiv.style.display = "none";
+}

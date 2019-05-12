@@ -5,39 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="test.css">
-    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
 </head>
-<body>
-    <div class = "wrapper">
-            <div class = "header"></div>
-            
+    <body>
+        <div class = "wrapper">
+            <div class = "header">
+                    <div class="dropdown"></div>
+                    <button onclick="myFunction()" class="dropbtn"></button>
+                    <div id="myDropdown" class="dropdown-content">
+                      <a href="Link">Exempel</a>
+                      <a href="Link" target="_blank">Exempel</a> 
+                      <a href="Link" >Exempel</a>
+                    </div>
+                  </div>
+            </div>    
             <div class = "content3"> 
                 <div class = "OmMatenitem Bakgrund1">
-                    <h1>Om våran mat</h1>
-                    <p>Bllaljdldlwdjldjldjldjld</p></div>
+                    <div class="longText">
+                        <h1>Om våran mat</h1>
+                        <a>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu blandit felis, at tristique lacus. Proin non sapien tempor, porta risus id, cursus lectus. Nulla sodales, lectus eu congue mollis, lectus libero rhoncus enim, faucibus gravida velit velit a turpis. Cras varius scelerisque libero, tincidunt dapibus est mollis in. Donec eleifend, lacus ut luctus aliquet, erat ipsum sodales tortor, sed commodo arcu est nec mauris. Nulla vitae tellus tincidunt, dapibus mauris sit amet, condimentum eros. Praesent in rhoncus dolor, iaculis interdum nibh. Nullam euismod libero vel diam euismod aliquam. Proin mattis nisl vitae leo facilisis ullamcorper. Ut accumsan luctus lectus, eu consectetur velit dignissim eu. Etiam bibendum quam a lacus vulputate, vel faucibus nibh fermentum. Proin id maximus sapien. Nullam dignissim nisi mauris. Mauris</a>
+                    </div>
+                    <div class="shortText">
+                            <h1>Om våran mat</h1>
+                            <a>Lorem ipsum dolor sit amet<i class="clickable" onclick="visaHelText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu blandit felis, at tristique lacus. Proin non sapien tempor, porta risus id, cursus lectus. Nulla sodales, lectus eu congue mollis, lectus libero rhoncus enim, faucibus gravida velit velit a turpis. Cras varius scelerisque libero, tincidunt dapibus est mollis in. Donec eleifend, lacus ut luctus aliquet, erat ipsum sodales tortor, sed commodo arcu est nec mauris. Nulla vitae tellus tincidunt, dapibus mauris sit amet, condimentum eros. Praesent in rhoncus dolor, iaculis interdum nibh. Nullam euismod libero vel diam euismod aliquam. Proin mattis nisl vitae leo facilisis ullamcorper. Ut accumsan luctus lectus, eu consectetur velit dignissim eu. Etiam bibendum quam a lacus vulputate, vel faucibus nibh fermentum.')">Läs mer...</i></a>
+                    </div>
+                </div>     
                 <div class = "OmMatenitem Bakgrund2">
-                    <h1>Om våran mat</h1>
-                    <p>dhhhdhdhdhdhh</p></div>
-            </div>
-            <div class = "footer">
-                    <div id="item1" class="footerItem">
-                        <a href="test.html">
-                                <h3>Om Oss</h3>
-                        </a>
-                    </div>
-                    <div id="item2" class="footerItem">
-                        <a href="Meny.html">
-                                <h3>Meny</h3>
-                        </a>
-                    </div>
-                    <div id="item3" class="footerItem">
-                        <a href="OmMaten.html">
-                                <h3>Om Maten</h3>
-                        </a>
+                    <div class="longText">
+                        <h1>Om våran mat</h1>
+                        <a>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu blandit felis, at tristique lacus. Proin non sapien tempor, porta risus id, cursus lectus. Nulla sodales, lectus eu congue mollis, lectus libero rhoncus enim, faucibus gravida velit velit a turpis. Cras varius scelerisque libero, tincidunt dapibus est mollis in. Donec eleifend, lacus ut luctus aliquet, erat ipsum sodales tortor, sed commodo arcu est nec mauris. Nulla vitae tellus tincidunt, dapibus mauris sit amet, condimentum eros. Praesent in rhoncus dolor, iaculis interdum nibh. Nullam euismod libero vel diam euismod aliquam. Proin mattis nisl vitae leo facilisis ullamcorper. Ut accumsan luctus lectus, eu consectetur velit dignissim eu. Etiam bibendum quam a lacus vulputate, vel faucibus nibh fermentum. Proin id maximus sapien. Nullam dignissim nisi mauris. Mauris</a>
+                    </div>    
+                    <div class="shortText">
+                        <h1>Om våran mat</h1>
+                        <a>Lorem ipsum dolor sit amet<i class="clickable" onclick="visaHelText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu blandit felis, at tristique lacus. Proin non sapien tempor, porta risus id, cursus lectus. Nulla sodales, lectus eu congue mollis, lectus libero rhoncus enim, faucibus gravida velit velit a turpis. Cras varius scelerisque libero, tincidunt dapibus est mollis in. Donec eleifend, lacus ut luctus aliquet, erat ipsum sodales tortor, sed commodo arcu est nec mauris. Nulla vitae tellus tincidunt, dapibus mauris sit amet, condimentum eros. Praesent in rhoncus dolor, iaculis interdum nibh. Nullam euismod libero vel diam euismod aliquam. Proin mattis nisl vitae leo facilisis ullamcorper. Ut accumsan luctus lectus, eu consectetur velit dignissim eu. Etiam bibendum quam a lacus vulputate, vel faucibus nibh fermentum.')">Läs mer...</i></a>
                     </div>
                 </div>
-    </div>
-
-</body>
+            </div>
+            <div class = "footer">
+                <div id="item1" class="footerItem">
+                    <a style="text-decoration:none" href="Start.html">
+                        <h3>Om Oss</h3>
+                    </a>
+                </div>
+                <div id="item2" class="footerItem">
+                    <a style="text-decoration:none" href="Meny.html">
+                        <h3>Meny</h3>
+                    </a>
+                </div>
+                <div id="item3" class="footerItem">
+                    <a style="text-decoration:none" href="OmMaten.html">
+                        <h3>Om Maten</h3>
+                    </a>
+                </div>
+            </div>    
+        </div>
+        <div id="popupWindow" class="longTextPopup">
+            <div class="longTextPopupBody">
+                <span class="close" onclick ="closePopUp()">&times;</span>
+                <div id="popupBodyText"></div>
+            </div>
+            </div>
+        </div>
+    </body>
 </html>

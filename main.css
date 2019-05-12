@@ -1,87 +1,106 @@
+/* mobile */
+
+/* Styling för headern på samtliga sidor */
 .header{
-    height: 150px;
     width: 100%;
-    background-image: url("bilder/Namnlöst-1.png");
- 
+    height: 150px;
+    background-image: url("bilder/MenyLiten.png")
 }
 
-
-.content2{
-    height: 400px;
+/* Grid för "Om oss" sidan och används endast för mobilen */
+.content{
     width: 100%;
+    height: 655px;
     background-color: darkgreen;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr ;
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: 
-    'Menyitem1' 'Menyitem2' 'Menyitem3' 
-    'Menyitem4' 'Menyitem5' 'Menyitem6' 
-    'Menyitem7' 'Menyitem8' 'Menyitem9' 
+    'griditem' 
+    'griditem' 
+    'griditem'
 
 }
 
-.Meny {
+/* Gemensam styling för alla bakgrundsbilder som ligger i gridet */
+.griditem{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
     text-align: center;
     vertical-align: middle;
-    line-height: 90px;  
-
+    line-height: 200px; 
+    color: white;
+    font-family: italic;
 }
 
-.Menyitem1{
-    background-image: url("bilder/Meny1.png")
+/* bakgrundsbilderna */
+.OmOssBakgrund1{
+    background-image: url("bilder/OmOssMobileBlur1.png")
 }
 
-.Menyitem2{
-    background-image: url("bilder/Meny2.png")
+.OmOssBakgrund2{
+    background-image: url("bilder/OmOssMobileBlur2.png")
 }
 
-.Menyitem3{
-    background-image: url("bilder/Meny3.png")
+.OmOssBakgrund3{
+    background-image: url("bilder/OmOssMobileBlur3.png")
 }
 
-.Menyitem4{
-    background-image: url("bilder/Meny4.png")
+/* Grid för "Meny" sidan som är dynamiskt och fungerar för alla olika enheter */
+.content2{
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(1, 275px);
+    background-color: darkgreen;
+    margin: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
-.Menyitem5{
-    background-image: url("bilder/Meny5.png")
+/* Gemensam styling för alla rutor som ligger i gridet */
+.Meny{
+    position:relative;
+    height: 255px;
+    width: 265px;
+    justify-self: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    -moz-border-radius:20px;  
+    -webkit-border-radius:20px; 
+    border-radius:20px; 
+    text-align: center;
+    vertical-align: middle;
+    line-height: 255px; 
 }
 
-.Menyitem6{
-    background-image: url("bilder/Meny6.png")
+ .Menyitem{
+    background-image: url("bilder/Meny.png")
 }
 
-.Menyitem7{
-    background-image: url("bilder/Meny7.png")
-}
 
-.Menyitem8{
-    background-image: url("bilder/Meny8.png")
-}
 
-.Menyitem9{
-    background-image: url("bilder/Meny9.png")
-}
-
+/* Grid för "Om Maten" sidan och används endast för mobilen */
 .content3{
-    height: 400px;
     width: 100%;
+    height: 600px;
     background-color: darkgreen;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas: 
-    'OmMatenitem1' 'OmMatenitem1'
-    'OmMatenitem2' 'OmMatenitem2'
+    'OmMatenitem' 
+    'OmMatenitem' 
 }
 
-
-
+/* Gemensam styling för rutorna i gridet */
 .OmMatenitem{
-    filter: blur(4px);
-    -webkit-filter: blur(4px);
     margin-top: 25px;
     margin-left: 25px;
     margin-right: 25px;
@@ -89,67 +108,25 @@
     margin-bottom: 25px;
     text-align: center;
     vertical-align: middle;
-    line-height: 300px;  
+    font-family: italic;
+    color:white;
+}   
     
-}
-
+/* bakgrundsbilderna */
 .Bakgrund2 {
-    background-image: url("bilder/OmMaten2.jpg");
-    
-    
+    background-image: url("bilder/Mat1.png");
 }
-
 .Bakgrund1{
-    background-image: url("bilder/OmMaten1.jpg");
+    background-image: url("bilder/Mat2.png");
+    
 }
 
-
-.content{
-    height: 400px;
-    width: 100%;
-    background-color: darkgreen;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100%;
-    grid-template-areas: 
-    'griditem1' 'griditem1'
-    'griditem2' 'griditem2'
-
-}
-
-.griditem{
-    margin-top: 25px;
-    margin-left: 25px;
-    margin-left: 25px;
-    margin-bottom: 25px;
-    text-align: center;
-    color: white;
-    font-size: 25px;
-    font-style: oblique;
-    vertical-align: middle;
-    line-height: 300px; 
-    -webkit-transition: 2s;
-    transition: 2s; 
-}
-
-.griditem:hover {
-    width: 300px;
-  }
-
-
-.OmOssBakgrund1{
-    background-image: url("bilder/RedigeradHAmburgare-1.png");
-
-}
-.OmOssBakgrund2{
-    background-image: url("bilder/hamburgare.png");
-
-}
-
+/* Grid för footern och används endast för mobilen */
 .footer{
-    height: 100px;
+    height: 60px;
     width: 100%;
-    background-color: gray;
+    background-color : gray;
+    border-style: inset;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 100%;
@@ -158,20 +135,145 @@
     'item2' 'item2' 'item2'
     'item3' 'item3' 'item3'
 }
-
+/* gemensam styling av texten i footern */
 .footerItem{
     text-align: center;
     vertical-align: middle;
-    line-height: 45px;  
+    line-height: 25px; 
+    color: darkgreen;
+     
+
 }
 
-@media screen and (max-width: 425px){
-
-.header{
-    background-color: springgreen;
-    height: 75px;
-    width: 100%;
+/* Styling för alla klickbara texter, använder blått eftersom det är vanligt att det går att
+ klicka på blått */
+.clickable {
+    color: blue;
 }
+/* Gör klickbar text större när mus är över */
+.clickable:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+/* gråar ut bakgrunden när popup rutan visas */
+.longTextPopup {
+    display: none; /* Inte syns från början */
+    position: fixed; /* Stannar på plats */
+    z-index: 1; /* Hamnar högst upp */
+    padding-top: 5px;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto; /* scroll om de behövs */
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+/* styling av popupruta */
+.longTextPopupBody {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80vw; 
+    min-height: 50%;
+}
+/* styling av text i popupruta */
+.longTextPopupBody p {
+    color: black;
+    padding-left: 20px;
+}
+
+/* visa kort text, dölj lång text eftersom det är en liten display */
+.longText {
+    display:none;
+}
+.shortText {
+    display: block;
+}
+
+
+/* laptop */
+
+@media screen and (min-width: 380px){
+    /* Styling för headern på samtliga sidor */
+    .header{
+        height: 150px;
+        width: 100%;
+        background-image: url("bilder/Namnlöst-1.png");
+     
+    } 
+    /* Grid för "Om oss" sidan och används endast för laptop */
+    .content{
+        height: 400px;
+        width: 100%;
+        background-color: darkgreen;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100%;
+        grid-template-areas: 
+        'griditem1' 'griditem1'
+        'griditem2' 'griditem2'
+    
+    }
+    /* Gemensam styling för alla bakgrundsbilder som ligger i gridet */
+    .griditem{
+        margin-top: 25px;
+        margin-left: 25px;
+        margin-left: 25px;
+        margin-bottom: 25px;
+        text-align: center;
+        color: white;
+        font-size: 25px;
+        font-style: oblique;
+        vertical-align: middle;
+        line-height: 300px; 
+        -webkit-transition: 2s;
+        transition: 2s; 
+    }
+    /* hover */
+    .griditem:hover {
+        width: 300px;
+      }
+    
+    /* bakgrundsbilderna */
+    .OmOssBakgrund1{
+        background-image: url("bilder/RedigeradHAmburgare-1.png");
+    
+    }
+    .OmOssBakgrund2{
+        background-image: url("bilder/hamburgare.png");
+    
+    }
+    /* Grid för "Om Maten" sidan och används endast för laptop */
+    .content3{
+        height: 600px;
+        width: 100%;
+        background-color: darkgreen;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100%;
+        grid-template-areas: 
+        'OmMatenitem1' 'OmMatenitem1'
+        'OmMatenitem2' 'OmMatenitem2'
+    }
+    /* bilderna */
+    .Bakgrund2 {
+        background-image: url("bilder/OmMaten2.png");
+        
+        
+    }
+    
+    .Bakgrund1{
+        background-image: url("bilder/OmMaten1.png");
+    }
+    /* visa lång text, dölj kort text eftersom det är en stor display */
+    .longText {
+        display:block;
+    }
+    .shortText {
+        display: none;
+    }
 }
 
 .dropbtn {
