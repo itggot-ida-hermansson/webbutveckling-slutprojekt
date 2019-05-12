@@ -1,5 +1,14 @@
 /* mobile */
 
+html {
+    height: 100vh;
+}
+
+body {
+    height: 100vh;
+    background-image: url("../images/background.jpg");
+}
+
 /* Styling för headern på samtliga sidor */
 .header{
     width: 100%;
@@ -20,6 +29,14 @@
     'griditem' 
     'griditem'
 
+}
+
+#mobileMenu {
+    display: block;
+}
+
+#laptopMenu {
+    display: none;
 }
 
 /* Gemensam styling för alla bakgrundsbilder som ligger i gridet */
@@ -201,8 +218,42 @@
         height: 150px;
         width: 100%;
         background-image: url("bilder/Namnlöst-1.png");
-     
+        background-size:cover;   
     } 
+    
+#mobileMenu {
+    display: none;
+}
+
+#laptopMenu {
+    display: block;
+}
+
+#laptopMenu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  #laptopMenu li {
+    float: left;
+  }
+  
+  #laptopMenu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  #laptopMenu li a:hover {
+    background-color: #111;
+  }
+  
+
     /* Grid för "Om oss" sidan och används endast för laptop */
     .content{
         height: 400px;
@@ -231,10 +282,6 @@
         -webkit-transition: 2s;
         transition: 2s; 
     }
-    /* hover */
-    .griditem:hover {
-        width: 300px;
-      }
     
     /* bakgrundsbilderna */
     .OmOssBakgrund1{
